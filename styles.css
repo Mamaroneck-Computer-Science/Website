@@ -18,6 +18,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 18px; /* Added to uniformly increase base size */
 }
 
 body {
@@ -242,27 +243,41 @@ a {
   margin-bottom: 0.5rem;
 }
 
+.list-tight {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.list-tight li {
+  margin-bottom: 0.25rem;
+}
+
 .timeline {
   border-left: 2px dashed #9ec8bb;
   margin-left: 0.8rem;
   padding-left: 1rem;
   display: grid;
-  gap: 0.95rem;
+  gap: 0.4rem;
 }
 
 .timeline article {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--line);
   border-radius: 14px;
-  padding: 0.95rem;
+  padding: 0.5rem 1rem;
+}
+
+.timeline article p {
+  margin-bottom: 0;
 }
 
 .time {
   color: var(--accent);
   font-weight: 700;
-  font-size: 0.87rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  margin-bottom: 0.1rem;
 }
 
 .sponsor-grid {
