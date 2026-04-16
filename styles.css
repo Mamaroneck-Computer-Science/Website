@@ -1,12 +1,12 @@
 :root {
-  --bg: #f5f8f6;
-  --text: #12261e;
-  --muted: #445851;
+  --bg: #fdfaf6;
+  --text: #1a1a1a;
+  --muted: #555555;
   --surface: #ffffff;
-  --accent: #117e6b;
-  --accent-2: #f97316;
-  --line: #d8e2dd;
-  --shadow: 0 14px 34px rgba(17, 126, 107, 0.15);
+  --accent: #f97316;
+  --accent-2: #ea580c;
+  --line: #e5e5e5;
+  --shadow: 0 14px 34px rgba(249, 115, 22, 0.15);
   --radius: 20px;
 }
 
@@ -25,8 +25,8 @@ body {
   font-family: "Space Grotesk", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 10% -10%, #d8f4ec, transparent 40%),
-    radial-gradient(circle at 95% 20%, #ffe5cf, transparent 30%),
+    radial-gradient(circle at 10% -10%, #ffe5cf, transparent 40%),
+    radial-gradient(circle at 95% 20%, #fbdec5, transparent 30%),
     var(--bg);
   line-height: 1.5;
   overflow-x: hidden;
@@ -59,7 +59,7 @@ a {
 .orb-a {
   width: 380px;
   height: 380px;
-  background: rgba(17, 126, 107, 0.18);
+  background: rgba(249, 115, 22, 0.15);
   top: -120px;
   right: -80px;
 }
@@ -67,7 +67,7 @@ a {
 .orb-b {
   width: 320px;
   height: 320px;
-  background: rgba(249, 115, 22, 0.16);
+  background: rgba(26, 26, 26, 0.1);
   bottom: 10%;
   left: -130px;
 }
@@ -95,15 +95,10 @@ a {
   gap: 0.65rem;
 }
 
-.brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.6rem;
-  background: linear-gradient(120deg, var(--accent), #0ea5a0);
-  color: #fff;
-  font-size: 0.8rem;
+.brand-logo {
+  height: 2.2rem;
+  width: auto;
+  display: block;
 }
 
 .site-nav {
@@ -184,7 +179,7 @@ a {
   box-shadow: var(--shadow);
 }
 
-.button-ghost {
+.button-ghost {var(--accent-2)
   border-color: var(--line);
   color: var(--text);
   background: #fff;
@@ -258,7 +253,7 @@ a {
   padding-left: 1rem;
   display: grid;
   gap: 0.4rem;
-}
+}var(--accent)
 
 .timeline article {
   background: rgba(255, 255, 255, 0.9);
@@ -294,9 +289,9 @@ a {
   color: #24584f;
   background: rgba(255, 255, 255, 0.9);
 }
-
-.faq-list {
-  display: grid;
+var(--accent);
+  border-radius: 12px;
+  color: var(--text)
   gap: 0.7rem;
 }
 
