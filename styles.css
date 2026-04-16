@@ -174,7 +174,7 @@ a {
 }
 
 .button-primary {
-  background: linear-gradient(110deg, var(--accent), #0ea5a0);
+  background: var(--accent);
   color: #fff;
   box-shadow: var(--shadow);
 }
